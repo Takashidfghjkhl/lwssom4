@@ -1,7 +1,7 @@
 original_text = input("Введите сообщение:") #привет, мир!
 print(original_text) # >> привет, мир!
 lenght_text = len(original_text)
-print(lenght_text)
+print(f"Кол-во символов: {lenght_text}")
 print(f"Второй символ строки: {original_text[1]}")
 print(f"Последний символ строки: {original_text[-1]}")
 print(f"Первык 3 символа строки: {original_text[:3]}")
@@ -16,7 +16,7 @@ elif color_name == 2:
     color_name = "\u001b[31m"
 else:
     color_name = "\u001b[33m"
-color_text = original_text[:color_start]+color_name+original_text[color_start:color_end]+"\u001b[37m"+original_text[color_end:]
+color_text = original_text[:color_start-1]+color_name+original_text[color_start-1:color_end]+"\u001b[37m"+original_text[color_end:]
 print(color_text)
 old_char = input("Выберете какой символ заменить: ")
 new_char = input("Выберете на какой символ заменить: ")
