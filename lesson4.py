@@ -16,8 +16,8 @@ elif color_name == 2:
     color_name = "\u001b[31m"
 else:
     color_name = "\u001b[33m"
-color_text = original_text[:color_start-1]+color_name+original_text[color_start-1:color_end]+"\u001b[37m"+original_text[color_end:]
-print(color_text)
+color_text = original_text[:color_start]+color_name+original_text[color_start:color_end]+"\u001b[37m"+original_text[color_end:]
+print(f"Ваша расскараска: {color_text}")
 old_char = input("Выберете какой символ заменить: ")
 new_char = input("Выберете на какой символ заменить: ")
 modifiad_text = original_text.replace(old_char, new_char)
