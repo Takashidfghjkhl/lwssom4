@@ -1,5 +1,5 @@
-original_text = input("Введите сообщение:") #привет, мир!
-print(original_text) # >> привет, мир!
+original_text = input("Введите сообщение:")
+print(original_text) 
 lenght_text = len(original_text)
 print(f"Кол-во символов: {lenght_text}")
 print(f"Второй символ строки: {original_text[1]}")
@@ -28,8 +28,8 @@ odd = original_text[1::2]
 cipher = odd + even
 print(f"срез по чётным символам: {odd}")
 print(f"срез по нечётным символам: {even}")
-print(cipher)
-print(original_text[::-1])
+print(f"Соржение срезов: {cipher}") 
+print(f"Перевёрнутое: {original_text[::-1]}")
 middle_index = len(original_text)//2
 swapped_text = f"{original_text[middle_index:]}{original_text[:middle_index]}"
 print(f"Текст с заменой местами левой и правой части: {swapped_text}")
